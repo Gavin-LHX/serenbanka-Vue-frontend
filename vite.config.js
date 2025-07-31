@@ -9,7 +9,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:3300', // 后端服务器地址
+        target: 'https://serenbanka-vue-backend.vercel.app:3300', // 后端服务器地址
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/api')
       }
